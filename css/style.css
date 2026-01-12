@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #444;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 6px
+
+}
+
+.site-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Navigation */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.main-nav {
+    margin-left: auto;
+    margin-top: 40px;
+
+}
+.active {
+    border-bottom: 3px solid white;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+    color: aqua;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-heading {
+    text-align: left;
+    margin-bottom: 50px;
+    color: #0e34dd;
+}
+
+.landmark {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landmark:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.landmark img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.landmark h3 {
+    font-size: 1.9rem;
+    padding: 1rem 1.5rem 0.5rem;
+    color: #0e34dd;
+}
+
+.landmark p {
+    padding: 0 1.5rem 1.5rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+#social-network {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-network i {
+    font-size: 160%;
+    padding: 5%;
+    color: white;
+}
+
+#copy {
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.site-footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+
+
+
+/* ---------- HISTORY PAGE ---------- */
+
+/* Header */
+.text-center {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* History Sections */
+.history-section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #0d6efd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.history-section h2 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+
+
+/* contact page */
+ 
+.contact-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.back-nav {
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    padding: 0 1rem;
+}
+
+.back-nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+.back-nav a:hover {
+    opacity: 0.7;
+}
+
+.contact-container h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #444;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+  
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .history-page {
+    padding: 10px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-nav ul {
+        gap: 1rem;
+    }
+
+    .main-nav a {
+        font-size: 0.9rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+.site-header {
+    background-color: black
+}
+
+.main-nav a {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
